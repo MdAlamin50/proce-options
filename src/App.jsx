@@ -1,16 +1,17 @@
 
 import './App.css'
 import Nav from './components/NavBar/Nav'
-// import DaisyNav from './components/DaisyNav/DaisyNav'
+import DaisyNav from './components/DaisyNav/DaisyNav'
 
 function App() {
   
 
   return (
     <>
-      {/* <DaisyNav></DaisyNav> */}
+     
       <Nav></Nav>
-      <h1 >Vite + React</h1>
+       <DaisyNav></DaisyNav>
+      <h1 className='bg-green-600 text-6xl'>Vite + React</h1>
       
       
     </>

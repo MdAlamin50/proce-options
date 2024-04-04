@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 const Links = ({route}) => {
   return (
     <li className="mr-10">
@@ -5,5 +6,9 @@ const Links = ({route}) => {
     </li>
   );
 };
+
+Links.propTypes={
+  route:PropTypes.object.isRequired 
+}
 
 export default Links;

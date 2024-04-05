@@ -15,13 +15,13 @@ const Nav = () => {
 
   return (
     <nav className="text-black bg-yellow-200 p-6">
-      <div onClick={() => setOpen(true)}  className="md:hidden">
+      <div onClick={() => setOpen(!open)}  className="md:hidden">
       
       {
         open === true ? 
         <MdRestaurantMenu className="text-2xl"></MdRestaurantMenu> : <IoMenu className="text-2xl "></IoMenu>
       }
-      
+       
       </div>
         <ul className={`md:flex absolute bg-yellow-200 px-6 md:static
         ${open ? 'top-16':'-top-60'}

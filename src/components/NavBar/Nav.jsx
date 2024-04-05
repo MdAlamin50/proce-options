@@ -23,7 +23,9 @@ const Nav = () => {
       }
       
       </div>
-        <ul className="md:flex absolute bg-yellow-200 px-6">
+        <ul className={`md:flex absolute bg-yellow-200 px-6 md:static
+        ${open ? 'top-16':'-top-60'}
+         `}>
             {
                 routes.map(route => <Links key={route.id} route={route}></Links>)
             }
